@@ -1,0 +1,20 @@
+{
+	"private": true,
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build"
+	},
+	"dependencies": {
+		"svelte": "^3.32.1"
+	},
+	"devDependencies": {
+		"@chiuzon/svelteweb3": "^0.1.0",
+		"@web3-react/types": "^6.0.7",
+		"@web3-react/walletconnect-connector": "^6.2.8",
+		"esbuild": "^0.8.39",
+		"ethers": "^5.5.1",
+		"events": "^3.3.0",
+		"svelte-hmr": "^0.12.5",
+		"vite": "^2.0.0-beta.62"
+	}
+}
