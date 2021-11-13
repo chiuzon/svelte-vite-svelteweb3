@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@chiuzon/svelteweb3@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@chiuzon/svelteweb3/-/svelteweb3-0.1.0.tgz#f3f4e9c0e951d5979c26efa77e59f0951b28dd4e"
-  integrity sha512-IDf8YXGXqfI9Q/H5IyShwTs77TTbHBg5QPbitRT5gmLELTgTRDIXka/6yQ3lKQeD1Xjd13GMgwC2GTc3xHjdng==
+"@chiuzon/svelteweb3@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@chiuzon/svelteweb3/-/svelteweb3-0.1.4.tgz#c46dc400939338620e98971a14a8fbe528e6ce9d"
+  integrity sha512-5NEBYf3GNGCMcY6JSw+INFgenMjbACyLmfPx1guefi4z0BbFc0rbFdsXB7iDV7pfB9Wle5PX4WXFaSzkoufXDA==
 
 "@ethersproject/abi@5.5.0", "@ethersproject/abi@^5.5.0":
   version "5.5.0"
@@ -574,6 +574,15 @@
   integrity sha512-RhQasA4Ox8CxUC0OENc1AJJm8UTybu/oOCM61Zjg6y0iF7Z0sqv1Ai1VdhC33hrQpA8qSBgoXN9PaP8jKmtdqg==
   dependencies:
     "@web3-react/types" "^6.0.7"
+
+"@web3-react/injected-connector@^6.0.7":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@web3-react/injected-connector/-/injected-connector-6.0.7.tgz#1e0be23f51fa07fe6547fe986768a46b74c3a426"
+  integrity sha512-Y7aJSz6pg+MWKtvdyuqyy6LWuH+4Tqtph1LWfiyVms9II9ar/9B/de4R8wh4wjg91wmHkU+D75yP09E/Soh2RA==
+  dependencies:
+    "@web3-react/abstract-connector" "^6.0.7"
+    "@web3-react/types" "^6.0.7"
+    tiny-warning "^1.0.3"
 
 "@web3-react/types@^6.0.7":
   version "6.0.7"
@@ -1203,7 +1212,7 @@ svelte-hmr@^0.12.5:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.12.9.tgz#e323b71062a59bf4b73d2d5a7cc80dba256217e1"
   integrity sha512-SGE7Odznj4dqZtUVIWcoPCvZ9gHImxVIIjrz+O3DDSi0j4OaSLim6MRF4UdhlBKeW3glSRc+tXNSKYvM5x+Dyw==
 
-svelte@^3.32.1:
+svelte@^3.42.6:
   version "3.44.1"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.44.1.tgz#5cc772a8340f4519a4ecd1ac1a842325466b1a63"
   integrity sha512-4DrCEJoBvdR689efHNSxIQn2pnFwB7E7j2yLEJtHE/P8hxwZWIphCtJ8are7bjl/iVMlcEf5uh5pJ68IwR09vQ==
@@ -1212,6 +1221,11 @@ tiny-invariant@^1.0.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.2.0.tgz#a1141f86b672a9148c72e978a19a73b9b94a15a9"
   integrity sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==
+
+tiny-warning@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
+  integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
 toggle-selection@^1.0.6:
   version "1.0.6"

@@ -1,16 +1,29 @@
 <script lang='ts'>
-	import {ethers} from 'ethers'
-	import Web3Wrapper from '@chiuzon/svelteweb3/Web3Wrapper.svelte'
-	import Home from "./home.svelte";
+	import './styles/mini-default.min.css'
 
-	
-	const fetchLibrary = (provider: any) => {
-        const _provider = new ethers.providers.Web3Provider(provider)
-        _provider.pollingInterval = 1000
-        return _provider
-    }
+	import Providers from './Providers.svelte'
+	import ConnectedView from './views/ConnectedView.svelte'
+	import UnconnectedView from './views/UnconnectedView.svelte'
+
+	import { svelteWeb3 } from '@chiuzon/svelteweb3'
+
+	const { account } = svelteWeb3()
 </script>
 
-<Web3Wrapper fetchLibrary={fetchLibrary}>
-	<Home />
-</Web3Wrapper>
+<Providers>
+	<div class="container responsive-margin responsive-padding">
+	<!-- We store the account address in a derived store so you need to access it using the $ prefix -->
+	{#if $account}
+		<ConnectedView />
+	{:else}
+		<UnconnectedView />
+	{/if}
+	</div>
+</Providers>	
+
+<style>
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+</style>
