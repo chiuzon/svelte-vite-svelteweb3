@@ -19,6 +19,8 @@
 		<UnconnectedView />
 	{/if}
 	</div>
+
+	<a href="https://github.com/chiuzon/svelteWeb3">svelteWeb3 Library</a>
 </Providers>	
 
 <style>
